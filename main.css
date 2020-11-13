@@ -27,7 +27,19 @@
     justify-self: center;
 }
 
-
+.maindiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.maindivitem{
+    box-sizing: border-box;
+    margin: 6%;
+    width: 88%;
+    background-color: rgb(12, 230, 175);
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    padding: 5px 0;
+}
 /* ********diet************* */
 
 .diet{
@@ -70,3 +82,73 @@
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.roomhead{
+    width: 100%;
+    background-color: chartreuse;
+}
+.room{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.roomitem{
+    border: 1px solid red;
+}
+.roomitemimg{
+    margin: 2%;
+}
+.roomitemimg img{
+    width: 100%;
+}
+.roomname{
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+.roombutton{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 50%;
+    margin: 3px;
+    background-color: rgb(255, 196, 0);
+    padding: 2px;    
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
